@@ -6,7 +6,7 @@ Refreshes Google OAuth 2 Access Tokens
 ## Instructions
 
 ```javascript
-var refresh = require('google-token-refresh');
+var refresh = require('google-refresh-token');
 refresh(refreshToken, googleClientId, googleSecret, function (err, json, res) {
   if (err) return handleError(err);
   if (json.error) return handleError(new Error(res.statusCode + ': ' + json.error));
